@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 function RecursiveComponent(props) {
   const {
     components,
+    index
   } = props;
 
   return (
