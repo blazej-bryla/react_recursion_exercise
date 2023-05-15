@@ -29,7 +29,7 @@ function Recursion() {
   return (
     <div className="App-wrapper">
       <div className="App-timer">{seconds} seconds</div>
-      <RecursiveComponent components={components} />
+      <RecursiveComponent components={components} index={0} />
     </div>
   );
 }
