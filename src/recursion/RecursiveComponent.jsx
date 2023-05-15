@@ -1,21 +1,24 @@
 import React from 'react';
+
 import PropTypes from 'prop-types';
 
-function RecursiveComponent(props) {
-  const {
-    components,
-    index
-  } = props;
+function RecursiveComponent({components, index}) {
+
+
+  const ActualComponent = components[index]
 
   return (
-    <div>
-      {/* invoke recursive method here */}
-    </div>
+    index < components.length && (
+      <ActualComponent>
+        <RecursiveComponent components={components} index={index + 1} />
+      </ActualComponent>
+    )
   );
 }
 
 RecursiveComponent.propTypes = {
   components: PropTypes.arrayOf(PropTypes.elementType).isRequired,
+  index: PropTypes.number,
 };
 
 export default RecursiveComponent;
