@@ -10,6 +10,7 @@ const One = ({ children }) => {
     </div>
   );
 };
+
 const Two = ({ children }) => {
   return (
     <div className="App-box">
@@ -18,6 +19,7 @@ const Two = ({ children }) => {
     </div>
   );
 };
+
 const Three = ({ children }) => {
   return (
     <div className="App-box">
@@ -26,6 +28,7 @@ const Three = ({ children }) => {
     </div>
   );
 };
+
 
 const components = [One, Two, Three];
 
@@ -40,8 +43,5 @@ function Recursion() {
   );
 }
 
-Recursion.propTypes = {
-  // ...
-};
 
 export default Recursion;

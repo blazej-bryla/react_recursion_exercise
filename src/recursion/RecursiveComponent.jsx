@@ -1,11 +1,7 @@
-import React from 'react';
-
-import PropTypes from 'prop-types';
-
-function RecursiveComponent({components, index}) {
-
-
-  const ActualComponent = components[index]
+import React from "react";
+import PropTypes from "prop-types";
+function RecursiveComponent({ components, index }) {
+  const ActualComponent = components[index];
 
   return (
     index < components.length && (
